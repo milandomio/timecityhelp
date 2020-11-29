@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{ background-image:url(bg.jpg); margin:0; font: 12px 微软雅黑;}
+body a{ text-decoration:none;}
+.body{ box-shadow:0 0 20px rgba(0, 0, 0, .4); margin:0 auto; width:720px; background-color:#f8f8f8; overflow:hidden;}
+.top{ display:block; background-color:#111; height:3px; overflow:hidden;}
+.title{ padding:16px 8px; font:bold 26px 微软雅黑; display:inline-block;}
+.point{ display:inline-block;}
+.search{margin:8px 0px 8px 0px; width: 108px; box-shadow:inset 1px 1px 5px 1px rgba(0, 0, 0, .1);text-indent: 0;
+height: 8px;padding: 8px 16px;background: #dedede url(images/search.png) right center no-repeat; background:rgba(0, 0, 0, .1) url(../search.png) right center no-repeat;color: #999;border-radius: 24px;border: #EEE 1px solid;}
+.nav{ margin:0; background-color:#111; padding-left:16px;}
+.nav a{ display:inline-block; color:#f8f8f8; padding:4px;}
+.nav a:hover{ background-color:#333; }
+.main{ padding:8px; width:700px;}.main a{ font-weight:bold; color:#21759b;}
+.bottomer{ background-color:#111; color:#f8f8f8; padding:12px;}
+.bottomer a{ font-weight:bold; color:#f8f8f8;}
+h3{ margin:0;}#gonext{ display:none;}
+@media screen and (max-width: 730px) { 
+.body{width:300px;}.title{padding:8px;}
+.hander{ width:300px;}
+.point{ padding:0 0 5px 5px;}
+.search{ display:none;}
+#gonext{ display:inherit;}
+.main{ width:284px;}
+}
+</style>
+<script type="text/javascript">
+function ieSearch()
+{var wsh = new ActiveXObject("WScript.Shell");wsh.sendKeys("^{f}");}
+</script>
+<title>MC玩家指南|时光之城</title>
+</head>
+<body>
+<div class="body">
+    <div class="hander"><div class="top"></div>
+   	  <a class="title">MC玩家指南|时光之城</a>
+      <a class="point">本文档内容仅供参考,随时可能过期,实际以游戏中为准.</a>
+      <input onclick="ieSearch()" class="search" type="text" />
+      <div class="nav">
+        	<a href="index.html">首页</a>
+            <a href="zcdl.html">注册登录</a>
+            <a href="czsz.html">操作设置</a>
+            <a href="cyzl.html">常用指令</a>
+            <a href="aqbh.html">安全保护</a>
+            <a href="czxt.html">城镇系统</a><br id="gonext" />
+            <a>　教程资料:</a>
+            <a href="jcdt.html">电梯</a>
+            <a href="zlny.html">酿药</a>
+            <a href="pm.html">拍卖</a>
+            <a href="dp.html">地皮</a>
+            <a href="cw.html">宠物</a>
+            <a href="we.html">WE</a>
+      </div>
+  </div>
+    <div class="main"><!-- InstanceBeginEditable name="EditRegion1" --><h3>市场系统</h3>
+极大地方便玩家之间的物品交易,现设置公共市场,有免费区和收费区,玩家也可在其它地方开设市场.<br />
+/warp sc　　传送到公共市场内.<br />
+确认金钱或物品足够,看好牌子后,左键点击牌子出售,右键点击牌子购买<br />
+<br />
+建店教程：准备好要1个箱子,1个牌子,确认买卖的物品ID,手持要买卖的物品,输入命令/iinfo<br />
+<br />
+
+<img src="sc1.png" width="290" height="124" alt=" " /> 我们看到力量2药水的ID是373:8233<br /><br />
+
+接着放置箱子后,在箱子任意一面前面一格插牌子(注意:由于牌子锁插件直接贴到箱子上会无效),<br />
+<br />
+示例：第一行按↓键留空,每次交易2个,出售价格100元2个,收购价格30元2个,交易物品ID为373:8233所以是力量2药水.<br />
+<br />
+<img src="sc2.png" width="310" height="155" alt=" " /><br />
+<br />
+按确定后,牌子如图显示<br /><br />
+<img src="sc3.png" width="310" height="153" alt=" " /><br />
+<br />
+第一行是店主ID,方便联系,第二行表示每次交易2个(除非数量不足),<br />
+第三行表示出售100元,即50元1个,分号后面则是收购30元,卖1个15元,第四行是物品名称 药水8233(Potion:8233).<br />
+<br />
+设定完毕确认无误就可以放入商品了.<b style="color:#f00;">如果不收购或者出售则价格设定为0.</b><br />
+<br />
+<h3>拍卖系统</h3>将物品托管给系统进行拍卖.(手续费以游戏中规定为准)<br /><br />
+
+/auc i　　查看正在拍卖的物品和价格.<br />
+<br />
+      /auc s　　以1块起拍手上的物品1个,每次加价1块,拍卖30秒.<br />
+      <br />
+      /auc [数量]　　指定拍卖物品个数,1块起拍手上的物品,每次加价1块,拍卖30秒.<br />
+      <br />
+      /auc [数量] [起拍价] [加价] [时间(秒)]　　参考上面,你懂的.<br />
+      <br />
+      /bid　　竞拍正在拍卖的东西,在拍卖价格上加价1次<br />
+      <br />
+      (如果低于别人自动出价最高出价将显示：你已自动出价.详情如下.)<br />
+      <br />
+      /bid [价格]　　以指定价格竞拍正在拍卖的东西,这个价格不能低于目前拍卖价与加价的和.<br />
+      <br />
+      /bid [价格] [最大竞价]　　以指定价格竞拍正在拍卖的东西,同时设定自动竞拍,当价格高于最大竞价时,<br />
+      <br />
+      (自动竞拍将放弃拍卖,否则当有人抢拍时,按最低加价不断竞拍.) <br /><!-- InstanceEndEditable --></div>
+    <div class="bottomer">© 2013 <a href="http://t.qq.com/myxfdu" target="new">xfdu88</a><span style="font-size:0;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253051776'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253051776' type='text/javascript'%3E%3C/script%3E"));</script></span> 指南的完善离不开大家的支持,如有建议或疑问请指出．－<a href="update.html">更新日志</a><br id="gonext" />　本文档最终解释权归 时光之城管理组 所有.</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

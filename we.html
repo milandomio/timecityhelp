@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{ background-image:url(bg.jpg); margin:0; font: 12px 微软雅黑;}
+body a{ text-decoration:none;}
+.body{ box-shadow:0 0 20px rgba(0, 0, 0, .4); margin:0 auto; width:720px; background-color:#f8f8f8; overflow:hidden;}
+.top{ display:block; background-color:#111; height:3px; overflow:hidden;}
+.title{ padding:16px 8px; font:bold 26px 微软雅黑; display:inline-block;}
+.point{ display:inline-block;}
+.search{margin:8px 0px 8px 0px; width: 108px; box-shadow:inset 1px 1px 5px 1px rgba(0, 0, 0, .1);text-indent: 0;
+height: 8px;padding: 8px 16px;background: #dedede url(images/search.png) right center no-repeat; background:rgba(0, 0, 0, .1) url(../search.png) right center no-repeat;color: #999;border-radius: 24px;border: #EEE 1px solid;}
+.nav{ margin:0; background-color:#111; padding-left:16px;}
+.nav a{ display:inline-block; color:#f8f8f8; padding:4px;}
+.nav a:hover{ background-color:#333; }
+.main{ padding:8px; width:700px;}.main a{ font-weight:bold; color:#21759b;}
+.bottomer{ background-color:#111; color:#f8f8f8; padding:12px;}
+.bottomer a{ font-weight:bold; color:#f8f8f8;}
+h3{ margin:0;}#gonext{ display:none;}
+@media screen and (max-width: 730px) { 
+.body{width:300px;}.title{padding:8px;}
+.hander{ width:300px;}
+.point{ padding:0 0 5px 5px;}
+.search{ display:none;}
+#gonext{ display:inherit;}
+.main{ width:284px;}
+}
+</style>
+<script type="text/javascript">
+function ieSearch()
+{var wsh = new ActiveXObject("WScript.Shell");wsh.sendKeys("^{f}");}
+</script>
+<title>MC玩家指南|时光之城</title>
+</head>
+<body>
+<div class="body">
+    <div class="hander"><div class="top"></div>
+   	  <a class="title">MC玩家指南|时光之城</a>
+      <a class="point">本文档内容仅供参考,随时可能过期,实际以游戏中为准.</a>
+      <input onclick="ieSearch()" class="search" type="text" />
+      <div class="nav">
+        	<a href="index.html">首页</a>
+            <a href="zcdl.html">注册登录</a>
+            <a href="czsz.html">操作设置</a>
+            <a href="cyzl.html">常用指令</a>
+            <a href="aqbh.html">安全保护</a>
+            <a href="czxt.html">城镇系统</a><br id="gonext" />
+            <a>　教程资料:</a>
+            <a href="jcdt.html">电梯</a>
+            <a href="zlny.html">酿药</a>
+            <a href="pm.html">拍卖</a>
+            <a href="dp.html">地皮</a>
+            <a href="cw.html">宠物</a>
+            <a href="we.html">WE</a>
+      </div>
+  </div>
+    <div class="main"><!-- InstanceBeginEditable name="EditRegion1" -->//limit 数量 限制操作级别,防止操作过大导致崩服.建议(150000).
+          <br />
+    <h3>WE选择操作</h3>
+        //wand 获得WE工具,使用工具左右键分别选择两个点,构成立方体选择区域.<br />
+        //pos1 当前站立位置设定为第一选择点 //pos2 同理设定为第二选择点.<br />
+        //hpos1 将你屏幕中心的十字准星所指的地方设定为第一选择点. //hpos2 同理.<br />
+        //chunk 选择你所在的区块,16*16大小,chunk范围定义与小地图方格一致.
+      <h3>WE选择操作(复杂,初学忽略)</h3>
+    //expand 扩大已有的选择区域 //outset 向六个方向扩大<br />
+        //expand 扩大格数 方向(N北S南W西E东U上D下)<br />
+        //expand 扩大格数 反向扩大格数(可以不写) 方向<br />
+        //expand vert 扩大到高度1-255.
+      //contract 缩小已有选择区域,指令同上. <br />
+//inset 六个方向缩小
+      //shift 移动格数 方向(N北S南W西E东U上D下)<br />
+        同时扩大和缩小
+      //size 显示选择区域的方块数量.<br />
+        //size 方块id 显示选择区域的指定方块数量.<br />
+        //distr 分析选择区域内的方块比例.
+      <h3>WE选择模式(复杂,初学忽略) </h3>
+        //sel cuboid 默认的选择模式,两点确定一个立方体.<br />
+        //sel extend 扩展的选择模式,每次点击都会以当前最大矩形为选择区.<br />
+        //sel poly 多边形模式,第一个为初始点,后面每次点击都会和上次点击连线形成多边形.<br />
+        //sel ellipsoid 椭球体模式,第一个点为球心,第二点为椭球外立方体顶点.<br />
+        //sel sphere 球体模式,第一个点为球心,第二点为半径偏移量.<br />
+        //sel cyl 圆柱体,第一个点为圆柱体中心，第二个点为外接立方体的顶点.
+    <h3>WE方块操作</h3>
+        //set 方块id 设置选择区域为指定方块.id为0是清除.<br />
+        //set 50%2,50%3 设置选择区域50%是草地,50%是泥土.
+          <br />
+          <br />
+    //replace 目标方块id 替换选择区域的非空气方块变成目标方块.<br />
+        //replace 已有方块id 目标方块id 替换选择区域的已有方块变成目标方块.<br />
+    <br />
+    //walls 方块id 在选择区域用指定方块在四面建墙.<br />
+        //faces 方块id 在选择区域用指定方块在六面建墙.<br />
+        //overlay 方块id 在选择区域用指定方块在已有方块上面铺地板.
+        <br />
+    <br />
+    //stack 次数 方向(N北S南W西E东U上D下)<br />
+        将选择区域内的方块往指定方向复制指定次数.<br />
+        //move 格数 方向(N北S南W西E东U上D下) 替代方块<br />
+        将选择区域内的方块往指定方向移动指定格数.
+      //smooth 次数<br />
+        将选择区域内的方块整理平滑,可指定平滑次数.<br />
+        <br />
+    //regen 将选择区域按照地图种子重新生成.<br />
+        //naturalize 将选择区域恢复自然状态,草泥土石头的构成.
+        <br />
+    //undo 取消刚才的操作.<br />
+        //redo 重作刚才的操作.
+      
+      <h3>WE方块剪贴操作</h3>
+      //copy 将选择区域复制到剪贴板.粘贴时按此指令所站位置还原.<br />
+        //cut 将选择区域复制到剪贴板并清除选择区域内方块.<br />
+        //paste 将剪贴板内容按你现在所站位置还原.人物朝向不影响内容.
+        <br />
+    //rotate 角度 将剪贴板内容按角度平行旋转.粘贴前设置.<br />
+        //flip 方向 将剪贴板内容按方向镜像翻转,加上-p按照人物来翻转.
+      <h3>WE快速模型操作</h3>
+      //hcyl 方块 半径 高度 创建垂直空心圆柱<br />
+        //cyl 方块 半径 高度 创建垂直圆柱<br />
+        //sphere 方块 半径 创建球体<br />
+        //hsphere 方块 半径 创建空心球体<br />
+        /forestgen 尺寸 类型 密度 创建森林<br />
+        /pumpkins 尺寸 创建南瓜森林
+        <h3>WE快速修整操作</h3>
+      //fill 方块 半径 深度 填满洞<br />
+        //fillr 方块 半径 遞回填满洞<br />
+        //drain	半径 删除周围的水和岩浆<br />
+        //fixwater	半径 修正玩家附近水池内的水流为水源<br />
+        //fixlava	半径 修正玩家附近岩浆池内的流动岩浆为岩浆源<br />
+        //replacenear 半径 已有方块 目标方块 替换玩家周围的某种方块.<br />
+        //removenear 方块 半径 删除玩家周围的方块<br />
+        //snow 半径 在玩家周围创建雪<br />
+        //thaw 半径 删除玩家周围的雪<br />
+        //ex 半径 扑灭玩家周围的火灾<br />
+        //butcher 半径 杀死玩家周围的怪物<br />
+        //remove id 半径 删除玩家周围一切实体.
+      <h3>WE人物操作</h3>
+      //unstuck 往上传送<br />
+        //ascend 往上传送一层<br />
+        //descend 往下传送一层<br />
+        //ceil (clearance) 到天花板上<br />
+        //thru 穿过面前墙壁<br />
+        //jumpto 跳到所視位置<br />
+        //up 格数 将人物抬高指定格数.<br />
+      
+  <!-- InstanceEndEditable --></div>
+    <div class="bottomer">© 2013 <a href="http://t.qq.com/myxfdu" target="new">xfdu88</a><span style="font-size:0;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253051776'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253051776' type='text/javascript'%3E%3C/script%3E"));</script></span> 指南的完善离不开大家的支持,如有建议或疑问请指出．－<a href="update.html">更新日志</a><br id="gonext" />　本文档最终解释权归 时光之城管理组 所有.</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

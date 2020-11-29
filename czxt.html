@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{ background-image:url(bg.jpg); margin:0; font: 12px 微软雅黑;}
+body a{ text-decoration:none;}
+.body{ box-shadow:0 0 20px rgba(0, 0, 0, .4); margin:0 auto; width:720px; background-color:#f8f8f8; overflow:hidden;}
+.top{ display:block; background-color:#111; height:3px; overflow:hidden;}
+.title{ padding:16px 8px; font:bold 26px 微软雅黑; display:inline-block;}
+.point{ display:inline-block;}
+.search{margin:8px 0px 8px 0px; width: 108px; box-shadow:inset 1px 1px 5px 1px rgba(0, 0, 0, .1);text-indent: 0;
+height: 8px;padding: 8px 16px;background: #dedede url(images/search.png) right center no-repeat; background:rgba(0, 0, 0, .1) url(../search.png) right center no-repeat;color: #999;border-radius: 24px;border: #EEE 1px solid;}
+.nav{ margin:0; background-color:#111; padding-left:16px;}
+.nav a{ display:inline-block; color:#f8f8f8; padding:4px;}
+.nav a:hover{ background-color:#333; }
+.main{ padding:8px; width:700px;}.main a{ font-weight:bold; color:#21759b;}
+.bottomer{ background-color:#111; color:#f8f8f8; padding:12px;}
+.bottomer a{ font-weight:bold; color:#f8f8f8;}
+h3{ margin:0;}#gonext{ display:none;}
+@media screen and (max-width: 730px) { 
+.body{width:300px;}.title{padding:8px;}
+.hander{ width:300px;}
+.point{ padding:0 0 5px 5px;}
+.search{ display:none;}
+#gonext{ display:inherit;}
+.main{ width:284px;}
+}
+</style>
+<script type="text/javascript">
+function ieSearch()
+{var wsh = new ActiveXObject("WScript.Shell");wsh.sendKeys("^{f}");}
+</script>
+<title>MC玩家指南|时光之城</title>
+</head>
+<body>
+<div class="body">
+    <div class="hander"><div class="top"></div>
+   	  <a class="title">MC玩家指南|时光之城</a>
+      <a class="point">本文档内容仅供参考,随时可能过期,实际以游戏中为准.</a>
+      <input onclick="ieSearch()" class="search" type="text" />
+      <div class="nav">
+        	<a href="index.html">首页</a>
+            <a href="zcdl.html">注册登录</a>
+            <a href="czsz.html">操作设置</a>
+            <a href="cyzl.html">常用指令</a>
+            <a href="aqbh.html">安全保护</a>
+            <a href="czxt.html">城镇系统</a><br id="gonext" />
+            <a>　教程资料:</a>
+            <a href="jcdt.html">电梯</a>
+            <a href="zlny.html">酿药</a>
+            <a href="pm.html">拍卖</a>
+            <a href="dp.html">地皮</a>
+            <a href="cw.html">宠物</a>
+            <a href="we.html">WE</a>
+      </div>
+  </div>
+    <div class="main"><!-- InstanceBeginEditable name="EditRegion1" -->
+    
+      <h3>城镇系统<br />
+      </h3>
+      <p>不同服务器所需建镇资金不同,请用指令/towny prices查看建镇费用.<br />
+      <br />
+      /towny ? 城镇系统总指令菜单 /t set 或 /town ? 团队指令菜单<br />
+        /t　　查看自己团队信息.<br />
+        /t [团队名]　　查看指定团队信息.<br />
+        /t list　　查看所有团队列表.<br />
+        /t here　　查看现在站的地方的团队信息.<br />
+        /tc　　进入城镇聊天频道.<br />
+        /t spawn　　传送到团队主城.<br />
+        /t outpost　　传送到团队前哨点.<br />
+        /t deposit [数量]　　拿出指定数量的现钞捐入团队银行.<br />
+        /plot claim 购买此处(16*16)城镇出售的土地,金钱流入团队银行.<br />
+        /t leave　　退出团队<br />
+        <br />
+        团队领导人指令:<br />
+        /t new [名字]　　用你当前所在的地,创建1个指定名字的团队(绝对不能用中文).
+        <br />
+        /t add [名字]　　邀请指定人加入城镇.<br />
+        /t kick [名字]　　请指定人退出城镇.<br />
+/t rank add [名字] assistant　　指定名字的人作为团队助理,邀请新成员加入和土地买卖等大部分权限.        <br />
+        /t claim　　用团队银行的钱来买断你当前所在的地(16*16大小),土地必须和原来的地相连.<br />
+        /t claim outpost　　用团队银行的钱来买断你当前所在的地(16*16大小),土地作为前哨点.<br />
+        /t set board [文字]　　修改团队简介为指定文字.<br />
+        /t set mayor [名字]　　把团队交付给指定名字的人来领导,自己变成团员.<br />
+        /t set homeblock　　把团队家设置到你当前所在的地.<br />
+        /t set spawn　　把团队出生(复活)点设置到你当前所在的位置,该位置必须在团队家内.<br />
+        /t set taxes [数量]　　压榨团员.<br />
+        /t set name [文字]　　修改团队名称为指定文字.<br />
+        /t set tag [文字]　　设定团队标签为指定文字,限制4字符.<br />
+        /t toggle mobs　　切换团队领地是否刷怪.<br />
+        /t toggle pvp　　切换团队领地能否互撸.<br />
+        /res toggle townclaim　　进入疯狂买地模式,城镇银行只要有钱走哪买哪.<br />
+        /res toggle map　　进入地图模式,走一步聊天栏显示附近领地情况.<br />
+        /t claim auto　　<strong>慎用！！！</strong>以所站位置为中心,耗尽城镇银行的钱和城镇土地限购量以近圆形购买附近土地. <br />
+        <br />
+        /plot fs [数值] 以指定价格出售所在位置土地(16*16),出售后金钱流入团队银行.
+        <br />
+/plot nfs 设置不出售.<br />
+<br />
+		/t set perm　　调出权限设置列表.<br />
+权限设置:权限设置有3种,个人权限/res作用于你使用/plot claim购买的地,<br />
+地皮权限/plot由城主或地皮主人对单块地皮(16*16)设置(设置时站在要设置的地皮上),<br />
+城镇权限/t 由城主对整个城镇拥有的地皮进行设置.<br />
+使用方法为:/权限类型 set perm 对象 行为 开或关.<br />
+示例:/t set perm resident build on
+<br />
+此处/t对城镇设置权限 ,团员 的 建筑权限 打开.<br />
+如果不写对象则对所有对象设置,如果不写行为则对所有行为设置.<br />
+示例:/t set perm destroy off
+<br />
+此处/t对城镇设置权限 ,所有人破坏权限关闭(插件有效的情况下团员都无法破坏方块).<br />
+<br />
+        对象：resident成员 ally同盟 outsider其他人<br />
+        行为：build建造 destroy破坏 switch使用按钮箱子附魔台等 itemuse吃东西喝药水<br /> 
+        开关: on开 off关<br />
+        <br />
+        其它设置请自行参考研究.
+        <br />
+        <br />
+    如需完整说明请参考：<a href="http://code.google.com/a/eclipselabs.org/p/towny/wiki/Commands" target="new">towny官方wiki</a></p>
+    <!-- InstanceEndEditable --></div>
+    <div class="bottomer">© 2013 <a href="http://t.qq.com/myxfdu" target="new">xfdu88</a><span style="font-size:0;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253051776'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253051776' type='text/javascript'%3E%3C/script%3E"));</script></span> 指南的完善离不开大家的支持,如有建议或疑问请指出．－<a href="update.html">更新日志</a><br id="gonext" />　本文档最终解释权归 时光之城管理组 所有.</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>
